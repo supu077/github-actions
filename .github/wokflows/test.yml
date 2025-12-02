@@ -1,0 +1,12 @@
+name: test
+on: push
+jobs:
+  test:
+    run-on: ubuntu-latest
+    steps:
+      - name: Getcode
+        uses: action/checkout@v3
+      - name: download node js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
