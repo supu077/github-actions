@@ -10,7 +10,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Check node version
-        run: |
-          node -v
-          npm -v
+  Deploy:
+    test1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get Code
+          run: |
+            node -v        
